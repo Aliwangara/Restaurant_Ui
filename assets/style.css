@@ -1,0 +1,119 @@
+:root{
+   --side-bar-font-colour:#ff0000;
+   --body-bg-colour:#dfdfdf  ;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    line-height: 1;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--body-bg-colour);
+}
+
+body .main_container{
+    width: 95%;
+    margin: 2em 0 2em 2em;
+    flex-wrap: wrap;
+
+}
+
+/* HEADING BACKGROUND AND SIDE BAR */
+
+#heading header{
+    background-image: url(./images/header_bg/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 60vh;
+
+}
+#heading .side-bar{
+    width: 10vw;
+    height: 40vh;
+    background-color: #000000;
+    background-color:rgba(0, 0, 0, 0.73);
+    margin-left: 1em; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    position:fixed;
+}
+
+#heading .side-bar .side{
+    margin-top: 1em;
+    
+}
+#heading .side-bar .side img{
+    width: 5vw;
+    
+
+}
+#heading .side-bar .side  ul li{
+    margin-bottom: 1em;
+    color: var(--side-bar-font-colour);
+}
+#heading .side-bar .side ul{
+    list-style: none;
+    font-size: 1.4rem;
+    
+   
+    
+}
+/* END OF HEADING BACKGROUND AND SIDEBAR */
+
+
+/* START OF ABOUT US SECTION */
+
+#About{
+    margin-top: 1em;
+    font-size: 1rem;
+
+}
+#About .about-heading{
+    text-align: center;
+    margin-bottom: .6em;
+    font-size: 3rem;
+    font-weight: 1,300;
+    font-style: normal;
+}
+#About .About-info{
+    display: flex;
+    line-height: 1.5;
+    
+}
+#About img{
+    height: 50vh;
+    width:450%;
+    align-items: baseline;
+}
+#About p{
+    font-size: 1.1rem;
+    flex: 1;
+    padding: 1em 0 3em 4em;
+    text-wrap: balance;
+}
+
+/* END OF ABOUT US SECTION */
+
+
+
+
+
