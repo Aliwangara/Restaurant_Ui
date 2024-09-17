@@ -2,7 +2,8 @@
    --side-bar-font-colour:#ff0000;
    --body-bg-colour:#dfdfdf  ;
    --card-title-colour:#b86c6c;
-
+   --table-font-head-colour:#970404;
+   --table-border:#3b393944;
 }
 
 *{
@@ -177,6 +178,52 @@ body .main_container{
 
 
 /* END OF FOOD DISPLAY SECTION */
+
+/* START OF PRICES DISPLAY TABLE  */
+
+
+#prices{
+    width: 90vw;
+    height: 40vh;
+    /* border: 1px solid ; */
+    margin: auto;
+   
+}
+#prices h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--table-font-head-colour);
+    font-style:oblique;
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+#prices .main-table{
+    margin-left:2em;
+    text-wrap: wrap;
+    margin: auto;
+    
+    
+}
+#prices .main-table thead{
+  margin:1em auto;
+
+  
+}
+#prices .main-table th, td{
+    border: 1px solid var(--table-border);
+    padding: 2em;
+
+    
+}
+
+
+
+
+
+
+
+
+/* END OF PRICES DISPLAY TABLE */
 
 
 
