@@ -4,6 +4,9 @@
    --card-title-colour:#b86c6c;
    --table-font-head-colour:#970404;
    --table-border:#3b393944;
+   --form-button-font:#ebebeb;
+   --form-button-background:#fc8585;
+   --form-button-background-hover:#f10f0f;
 }
 
 *{
@@ -185,8 +188,6 @@ body .main_container{
 #prices{
     width: 90vw;
     height: 40vh;
-    /* border: 1px solid ; */
-    margin: auto;
    
 }
 #prices h2{
@@ -224,6 +225,98 @@ body .main_container{
 
 
 /* END OF PRICES DISPLAY TABLE */
+
+/* START CONTACT FORM */
+
+#contact{
+    margin-top: 4em;
+    display: flex;
+}
+#contact .my-form .form-heading{
+    color: var(--table-font-head-colour);
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+
+    
+}
+#contact .my-form .overall-form{
+    display: flex;
+    margin-top: 1em;
+    /* margin: auto; */
+}
+
+.overall-form .contact-info{
+    margin:auto ;
+
+
+}
+
+.overall-form .contact-info img{
+    height: 15vh;
+}
+.overall-form .contact-info i{
+    display: block;
+    margin-bottom: 1em;
+}
+.overall-form .form{
+    /* border: 1px solid; */
+    padding: 1em;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.overall-form .form input:nth-child(1),.form input:nth-child(2){
+    margin-bottom: .5em;
+    padding: 1em;
+    border-radius: .5em;
+    width: 20vw;
+}
+.overall-form .form input:nth-child(3){
+    display: block;
+    margin-bottom: 1em;
+    width: 42.4vw;
+    padding: .8em;
+    border-radius: .4em;
+}
+
+.overall-form .form textarea:nth-of-type(1),textarea:nth-of-type(2) {
+    display: block;
+    padding: 1em 0 0 .3em ;
+    margin-bottom: 1em;
+    border-radius: .5em;
+
+}
+
+.overall-form .form textarea:nth-of-type(1){
+    width: 91vh;
+}
+
+
+.overall-form .form textarea:nth-of-type(2){
+    width: 91vh;
+}
+
+.overall-form .form .btn{
+         font-size: 1.5rem;
+         padding: .8em;
+         border-radius:2em;
+         background-color: var(--form-button-background);
+         cursor: pointer;
+         transition: background-color 1s,color 1s ;
+}
+.overall-form .form .btn:hover{
+    background-color: var(--form-button-background-hover);
+    color: white;
+}
+
+
+
+
+
+
+/* END CONTACT FORM */
 
 
 
