@@ -1,7 +1,7 @@
 :root{
    --side-bar-font-colour:#ff0000;
    --body-bg-colour:#dfdfdf  ;
-
+   --card-title-colour:#b86c6c;
 
 }
 
@@ -85,18 +85,20 @@ body .main_container{
 #About{
     margin-top: 1em;
     font-size: 1rem;
+    
 
 }
 #About .about-heading{
     text-align: center;
     margin-bottom: .6em;
     font-size: 3rem;
-    font-weight: 1,300;
+    font-weight: 800;
     font-style: normal;
 }
 #About .About-info{
     display: flex;
     line-height: 1.5;
+    
     
 }
 #About img{
@@ -106,12 +108,77 @@ body .main_container{
 }
 #About p{
     font-size: 1.1rem;
+    font-style: italic;
     flex: 1;
     padding: 1em 0 3em 4em;
     text-wrap: balance;
 }
 
 /* END OF ABOUT US SECTION */
+
+/* START OF FOOD DISPLAY SECTION */
+
+#food{
+
+}
+#food h1{
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: .8em;
+    text-align: center;
+    
+}
+#food h1::first-letter{
+    text-transform: uppercase;
+}
+
+#food .food-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#food .card{
+    height: 40vh;
+    width: 15vw;
+    border-radius: .7em;
+}
+.card .card-img img{
+    height: 20vh;
+    width: 15vw;
+    border-radius: .7em;
+   
+    
+}
+
+
+
+#food .food-info .card .card-title{
+    text-align: center;
+    margin-top: .1em;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--card-title-colour);
+
+}
+#food .food-info .card .card-body{
+    margin:1em .3em 0 .3em
+}
+
+
+
+
+
+
+
+
+
+/* END OF FOOD DISPLAY SECTION */
+
+
 
 
 
