@@ -7,6 +7,8 @@
    --form-button-font:#ebebeb;
    --form-button-background:#fc8585;
    --form-button-background-hover:#f10f0f;
+   --footer-background:#cacaca;
+   --footer-font-colour:#b86c6c;
 }
 
 *{
@@ -26,13 +28,15 @@ body{
     line-height: 1;
     box-sizing: border-box;
     min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
     display: flex;
     font-family: "Poppins", sans-serif;
     background-color: var(--body-bg-colour);
 }
 
-body .main_container{
-    width: 95%;
+.main_container{
+    
     margin: 2em 0 2em 2em;
     flex-wrap: wrap;
 
@@ -244,12 +248,12 @@ body .main_container{
 #contact .my-form .overall-form{
     display: flex;
     margin-top: 1em;
-    /* margin: auto; */
+    
 }
 
 .overall-form .contact-info{
-    margin:auto ;
-
+    margin:auto;
+    
 
 }
 
@@ -317,6 +321,41 @@ body .main_container{
 
 
 /* END CONTACT FORM */
+
+/* START OF FOOTER */
+
+#footer-section{
+    width: 97vw;
+    height:20vh;
+    background-color: var(--footer-background);
+    font-size: 2rem;
+    color: var(--footer-font-colour);
+    
+    
+    
+}
+
+#footer-section footer .footer-content{
+    display: flex;
+    padding: 1.5em ;
+    
+}
+.footer-content h2{
+    font-weight: 800;
+    font-style: italic;
+}
+
+footer .footer-content .socials{
+    margin-left: auto;
+
+}
+.socials i{
+    margin-top: .3em;
+   margin-left: 2em;
+}
+
+
+/* END OF FOOTER */
 
 
 
