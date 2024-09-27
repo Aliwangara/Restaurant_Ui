@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 16px;
     font: inherit;
 
 
@@ -56,7 +56,9 @@ body{
     width: 10vw;
     height: 50vh;
     background-color:rgba(0, 0, 0, 0.73);
+    border-radius: 20px;
     margin-left: 1em; 
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,7 +361,357 @@ footer .footer-content .socials{
 
 /* END OF FOOTER */
 
+@media (min-width:711px) and (max-width:1600px){
 
+    body{
+        overflow-x: hidden;
+    }
+
+    .main_container{
+    
+        margin: 2em 0 0 2em;
+        flex-wrap: wrap;
+        position: relative;
+    
+    }
+
+    
+#heading header{
+    background-size: cover;
+    height: 800px;
+    width: 1200px;
+    overflow-x: hidden;
+
+}
+
+#heading .side-bar{
+    width: 900px;
+    height:150px;
+    margin-top: 2em;
+    background-color:rgba(176, 168, 172, 0.47);
+    position:absolute;
+}
+
+#heading .side-bar .side{
+    margin-top: .5em;
+    margin-left: 0;
+    display: flex;
+    
+    
+}
+#heading .side-bar .side img{
+    width: 150px;
+    height: 130px;
+   
+
+}
+#heading .side-bar .side  ul li{
+    margin-left: 1em;
+    margin-top: 1em;
+    font-size: 2rem;
+    color: var(--side-bar-font-colour);
+}
+#heading .side-bar .side ul{
+    display: flex;
+    
+    list-style: none;
+    font-size: 1.4rem;
+    
+   
+    
+}
+
+
+/* START OF ABOUT US SECTION */
+
+#About{
+    margin-top: 1em;
+    font-size: 1rem;
+    
+
+}
+#About .about-heading{
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: normal;
+}
+#About .About-info{
+    display: flex;
+    line-height: 1.5;
+    
+    
+}
+#About img{
+    height: 500px;
+    width:500px;
+    
+}
+#About p{
+    font-size: 30px;
+    font-style: italic;
+    flex: 1;
+    padding: 1em 0 3em 1em;
+    text-wrap: balance;
+    overflow-x: hidden;
+}
+
+/* END OF ABOUT US SECTION */
+
+
+/* START OF FOOD DISPLAY SECTION */
+
+#food{
+
+}
+
+
+#food .food-info{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 2em;
+}
+
+#food .card{
+    height: 600px;
+    width: 600px;
+    border-radius: .7em;
+    align-content: start;
+    margin: 1em;
+    flex-shrink: 0;
+}
+.card .card-img img{
+    height: 400px;
+    width: 100%;
+    border-radius: .7em;
+   
+    
+}
+
+
+
+.card .card-title{
+    text-align:left;
+    margin-top: .1em;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--card-title-colour);
+
+}
+#food .food-info .card .card-body{
+    margin:1em .3em 0 .3em
+}
+.card p{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* END OF FOOD DISPLAY SECTION */
+
+
+
+/* START OF PRICES DISPLAY TABLE  */
+
+
+#prices{
+    width: 1500px;
+    height: 40vh;
+    margin-top: 6em;
+    margin-bottom: 9em;
+   
+}
+#prices h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--table-font-head-colour);
+    font-style:oblique;
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+#prices .main-table{
+    margin-left:2em;
+    text-wrap: wrap;
+    margin: auto;
+    
+    
+}
+#prices .main-table thead{
+  margin:1em auto;
+  font-size: 2rem;
+
+  
+}
+.main-table th{
+    font-size: 2rem;
+  
+    
+  }
+.main-table td{
+    font-size: 2rem;
+
+}
+#prices .main-table th, td{
+    border: 1px solid var(--table-border);
+    padding: 2em;
+
+    
+}
+
+
+
+
+
+
+
+
+/* END OF PRICES DISPLAY TABLE */
+
+
+
+/* START CONTACT FORM */
+
+#contact{
+    display: flex;
+    
+}
+#contact .my-form .form-heading{
+    color: var(--table-font-head-colour);
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+
+    
+}
+.overall-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    
+}
+
+.overall-form .contact-info{
+    margin:auto;
+    
+
+}
+
+.overall-form .contact-info img{
+    height: 15vh;
+}
+.overall-form .contact-info i{
+    display: block;
+    margin-bottom: 1em;
+}
+.overall-form .form{
+    /* border: 1px solid; */
+    padding: 1em;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.overall-form .form input:nth-child(1),.form input:nth-child(2){
+    margin-bottom: .5em;
+    width: 540px;
+    font-size: 2rem;
+}
+.overall-form .form input:nth-child(3){
+    display: block;
+    margin-bottom: 1em;
+    height: 5vh;
+    font-size: 2rem;
+    width: 1150px;
+    padding: .8em;
+    border-radius: .4em;
+}
+
+.overall-form .form textarea:nth-of-type(1),textarea:nth-of-type(2) {
+   font-size: 2rem;
+
+}
+
+.overall-form .form textarea:nth-of-type(1){
+    width: 1200px;
+}
+
+
+.overall-form .form textarea:nth-of-type(2){
+    width: 1200px;
+}
+
+.overall-form .form .btn{
+         font-size: 1.5rem;
+         padding: .8em;
+         border-radius:2em;
+         background-color: var(--form-button-background);
+         cursor: pointer;
+         transition: background-color 1s,color 1s ;
+}
+.overall-form .form .btn:hover{
+    background-color: var(--form-button-background-hover);
+    color: white;
+}
+
+
+
+
+
+
+/* END CONTACT FORM */
+
+
+
+/* START OF FOOTER */
+
+#footer-section{
+    width: 1200px;
+    height:10vh;
+    background-color: var(--footer-background);
+    font-size: 2rem;
+    color: var(--footer-font-colour);
+    
+    
+    
+}
+
+#footer-section footer .footer-content{
+    display: flex;
+    padding: 1.5em ;
+    
+}
+.footer-content h2{
+    font-weight: 800;
+    font-style: italic;
+}
+
+footer .footer-content .socials{
+    margin-left: auto;
+    font-style: oblique;
+    font-weight: 500;
+
+}
+.socials i{
+    margin-top: .3em;
+   margin-left: 2em;
+}
+
+
+/* END OF FOOTER */
+
+
+
+
+    
+
+}
 
 
 
