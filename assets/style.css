@@ -361,7 +361,7 @@ footer .footer-content .socials{
 
 /* END OF FOOTER */
 
-@media (min-width:711px) and (max-width:1600px){
+@media (min-width:370px) and (max-width:1600px){
 
     body{
         overflow-x: hidden;
