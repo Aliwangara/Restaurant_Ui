@@ -11,6 +11,11 @@
    --footer-font-colour:#b86c6c;
 }
 
+
+
+/* universal element */
+
+
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +25,9 @@
 
 
 }
+
+
+
 a{
     text-decoration: none;
     color: black;
@@ -28,19 +36,25 @@ body{
     line-height: 1;
     box-sizing: border-box;
     min-height: 100vh;
-    max-width: 100%;
-    overflow-x: hidden;
     display: flex;
     font-family: "Poppins", sans-serif;
     background-color: var(--body-bg-colour);
 }
 
+/* end of universal elements */
+
 .main_container{
     
     margin: 2em 0 0 2em;
     flex-wrap: wrap;
+    overflow-x: hidden;
+    /* width: 100%; */
+    /* max-width: 2000px; */
 
 }
+
+
+
 
 /* HEADING BACKGROUND AND SIDE BAR */
 
@@ -89,11 +103,15 @@ body{
 /* END OF HEADING BACKGROUND AND SIDEBAR */
 
 
+
+
+
 /* START OF ABOUT US SECTION */
 
 #About{
     margin-top: 1em;
     font-size: 1rem;
+    overflow: hidden;
     
 
 }
@@ -111,16 +129,18 @@ body{
     
 }
 #About img{
-    height: 50vh;
-    width:450%;
+    max-height: 50vh;
+    width:200px;
     align-items: baseline;
 }
 #About p{
     font-size: 1.1rem;
     font-style: italic;
     flex: 1;
-    padding: 1em 0 3em 4em;
-    text-wrap: balance;
+    padding: 1em 0 3em 2em;
+    /* max-width: 100%; */
+    /* text-wrap: balance; */
+    overflow-wrap: break-word;
 }
 
 /* END OF ABOUT US SECTION */
@@ -186,6 +206,8 @@ body{
 
 
 /* END OF FOOD DISPLAY SECTION */
+
+
 
 /* START OF PRICES DISPLAY TABLE  */
 
@@ -361,10 +383,11 @@ footer .footer-content .socials{
 
 /* END OF FOOTER */
 
-@media (min-width:370px) and (max-width:1600px){
+@media (min-width:370px) and (max-width:900px){
 
     body{
         overflow-x: hidden;
+        max-width: 100%;
     }
 
     .main_container{
@@ -378,37 +401,39 @@ footer .footer-content .socials{
     
 #heading header{
     background-size: cover;
-    height: 800px;
-    width: 1200px;
     overflow-x: hidden;
+    /* width: 50%; */
 
 }
 
 #heading .side-bar{
-    width: 900px;
+    width: 80%;
     height:150px;
     margin-top: 2em;
     background-color:rgba(176, 168, 172, 0.47);
     position:absolute;
 }
 
-#heading .side-bar .side{
+.side{
     margin-top: .5em;
     margin-left: 0;
+    padding:0 2em ;
     display: flex;
     
     
 }
 #heading .side-bar .side img{
-    width: 150px;
-    height: 130px;
+    /* width: 150px; */
+    height: 70px;
+    width: 30%;
+    margin-bottom: 1em;
    
 
 }
-#heading .side-bar .side  ul li{
+.side-bar .side  ul li{
     margin-left: 1em;
     margin-top: 1em;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: var(--side-bar-font-colour);
 }
 #heading .side-bar .side ul{
@@ -522,7 +547,7 @@ footer .footer-content .socials{
 
 
 #prices{
-    width: 1500px;
+    width: 50%;
     height: 40vh;
     margin-top: 6em;
     margin-bottom: 9em;
